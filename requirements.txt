@@ -1,5 +1,5 @@
 # Core RAG Dependencies
-pinecone-client>=3.0.0
+pinecone>=3.0.0
 
 # YouTube Processing
 yt-dlp>=2024.7.25
