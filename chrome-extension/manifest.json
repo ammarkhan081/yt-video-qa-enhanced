@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube RAG Assistant",
+  "version": "1.0.0",
+  "description": "AI-powered Q&A assistant for YouTube videos",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "http://localhost:8000/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+"content_scripts": [
+  {
+    "matches": [
+      "https://www.youtube.com/*",
+      "https://m.youtube.com/*"
+    ],
+    "js": ["content.js"],
+    "css": ["styles.css"],
+    "run_at": "document_end"
+  }
+],
+
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "YouTube RAG Assistant"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["styles.css"],
+      "matches": ["https://www.youtube.com/*"]
+    }
+  ]
+}

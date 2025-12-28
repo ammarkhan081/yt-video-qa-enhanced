@@ -1,0 +1,79 @@
+# Python virtual environment
+venv/
+env/
+ENV/
+.venv
+
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Environment variables
+.env
+.env.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Distribution / packaging
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Large model files (if any)
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.ckpt
+
+# Data files (uncomment if you have large datasets)
+# data/
+# datasets/
+# *.csv
+# *.json
+
+# Node modules (if any)
+node_modules/
